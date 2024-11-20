@@ -31,7 +31,7 @@
         chmod +w bunfig.toml
         echo >> bunfig.toml "[install.cache]"
         echo >> bunfig.toml "disable = true"
-        NODE_TLS_REJECT_UNAUTHORIZED=0 bun install
+        NODE_TLS_REJECT_UNAUTHORIZED=0 bun install --frozen-lockfile
         mv node_modules $out
         sha256sum bun.lockb > $out/sum
       '';
