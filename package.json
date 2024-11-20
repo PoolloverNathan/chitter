@@ -1,25 +1,25 @@
 {
   "name": "chitter",
   "version": "0.0.1",
-  "description": "A simple frontend for the Chute chat backend.",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "author": "PoolloverNathan",
   "repository": {
     "type": "git",
     "url": "nathanlaptopv:/home/nathan/stuff/fob/"
   },
+  "main": "dist/index.js",
+  "description": "A simple frontend for the Chute chat backend.",
   "keywords": [
     "chat",
     "chute",
     "web",
     "bun"
   ],
-  "author": "PoolloverNathan",
   "license": "AGPL-3.0-only",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
-    "react": "18",
-    "react-dom": "18"
+    "@catppuccin/palette": "^1.7.1",
+    "is-even": "^1.0.0"
   }
 }

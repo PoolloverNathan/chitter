@@ -2,7 +2,10 @@ process.stdout.write(`bundling... `)
 console.time("")
 const data = await Bun.build({
   entrypoints: ["./src/index.tsx"],
-  footer: `// did you expect some witty comment at the end? this isn't a movie`,
+  extensions: {
+    css: "text",
+  },
+  footer: `// TODO(PoolloverNathan): witty footer comment`,
   minify: true,
   outdir: "./dist",
   root: "./src",
